@@ -1,0 +1,105 @@
+* {
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+body{
+    background-image:url("../img/pbg.jpg");
+    background-size:cover;
+}
+a{
+    text-decoration:none;
+    color:white;
+}
+nav {
+    height:100px;
+    display:flex;
+    justify-content:space-around;
+    flex-direction:column;
+    background:url("../img/floor.jpg")center;
+    font-size:1.15rem;
+    border-bottom: solid 1px black;
+}
+nav ul {
+    list-style-type:none;
+}
+nav li a{
+    display:block;
+    text-align:center;
+    font-family:'Comfortaa';
+    text-shadow:2px 2px black;
+}
+section{
+    margin:auto;
+    background-color:rgb(220,220,220);
+    width:80%;
+    text-align:center;
+}
+p{
+    text-align:justify;
+    font-size:14px;
+    font-family:"Quicksand", sans-serif;
+}
+.ital{
+    font-style:italic;
+    text-align:center;
+}
+.box{
+    max-width:215px;
+}
+.sub{
+    font-size:1.5em;
+    font-family:'Sedgwick Ave Display', cursive;
+    font-weight:bold;
+    text-shadow:2px 2px white;
+    background-color:rgb(210,180,140);
+}
+footer{
+    background:url("../img/floor.jpg")no-repeat center;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    border-top:solid 1px black;
+}
+footer ul{
+    list-style-type:none;
+    background-color:rgba(0,0,0,0.5);
+    display:flex;
+    justify-content:space-around;
+    text-align:center;
+    text-shadow:1px 1px black;
+    color:white;
+    font-weight: bold;
+    font-family:'Sedgwick Ave Display', cursive;
+}
+footer ul li a{
+    color:lightgreen;
+}
+.plug{
+    animation:colorchange 5s infinite alternate;
+}
+@keyframes colorchange {
+    0%{color:white;}
+    20%{color:lightgreen;}
+    40%{color:lightblue;}
+    60%{color:rgb(255, 166, 77);}
+    80%{color:lightyellow;}
+    100%{color:rgb(255, 77, 77);}
+}
+
+@media only screen and (min-width: 768px) {
+    ul {
+        display:flex;
+        justify-content:space-around;
+    }
+    nav{
+        font-size:1.5rem;
+        height:90px;
+    }
+    nav ul a:hover{
+        color:lightgreen;
+    }
+    section{
+        height:85%;
+    }
+}
